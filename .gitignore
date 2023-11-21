@@ -2,3 +2,5 @@
 .pyc
 .vscode/settings.json
 *.pth
+**/__pycache__
+wandb/

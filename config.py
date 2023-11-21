@@ -12,7 +12,7 @@ ADDENDUM  = 1000 # K
 MARGIN = 1.0 # xi
 WEIGHT = 1.0 # lambda
 
-TRIALS = 3
+TRIALS = 1  #3
 CYCLES = 10
 
 EPOCH = 200
@@ -22,6 +22,9 @@ EPOCHL = 120 # After 120 epochs, stop the gradient from the loss prediction modu
 
 MOMENTUM = 0.9
 WDECAY = 5e-4
+
+save_checkpoint = False
+vis_loss = True
 
 ''' CIFAR-10 | ResNet-18 | 93.6%
 NUM_TRAIN = 50000 # N
