@@ -251,7 +251,7 @@ if __name__ == '__main__':
             acc = test(args, models, dataloaders, mode='test')
             print('Trial {}/{} || Cycle {}/{} || Label set size {}: Test acc {}'.format(trial+1,
                                             args.TRIALS, cycle+1, args.CYCLES, len(labeled_set), acc))
-            wandb.log({"Test Acc": acc}, step=cycle)
+            wandb.log({"Test Acc": acc})
 
             ##
             #  Update the labeled dataset via loss prediction-based uncertainty measurement
